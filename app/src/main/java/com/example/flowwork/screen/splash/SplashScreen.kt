@@ -18,7 +18,7 @@ fun SplashScreen(
 ) {
     Log.e("SplashScreen", "In SplashScreen")
 
-    val state by viewModel.dbrow.collectAsStateWithLifecycle()
+    val state by viewModel.dbrowAsVal.collectAsStateWithLifecycle()
   /*  val state by viewModel.repository.getRowCount() // todo in Screen
         .map<_, DataState> {
             Log.e("SplashViewModel", it.toString())
